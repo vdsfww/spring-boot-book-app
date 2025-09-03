@@ -1,8 +1,8 @@
 package org.example.spring;
 
-import org.example.spring.bookStore.model.Book;
-import org.example.spring.bookStore.service.BookService;
 import java.math.BigDecimal;
+import org.example.spring.bookstore.model.Book;
+import org.example.spring.bookstore.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

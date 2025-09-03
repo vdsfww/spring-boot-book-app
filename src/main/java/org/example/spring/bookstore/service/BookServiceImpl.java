@@ -1,10 +1,10 @@
-package org.example.spring.bookStore.service;
+package org.example.spring.bookstore.service;
 
-import lombok.RequiredArgsConstructor;
-import org.example.spring.bookStore.model.Book;
-import org.example.spring.bookStore.repository.BookRepository;
-import org.springframework.stereotype.Service;
 import java.util.List;
+import lombok.RequiredArgsConstructor;
+import org.example.spring.bookstore.model.Book;
+import org.example.spring.bookstore.repository.BookRepository;
+import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor

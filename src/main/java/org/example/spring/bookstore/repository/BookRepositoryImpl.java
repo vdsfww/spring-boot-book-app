@@ -1,9 +1,9 @@
-package org.example.spring.bookStore.repository;
+package org.example.spring.bookstore.repository;
 
-import org.example.spring.bookStore.exception.DataProcessingException;
-import org.example.spring.bookStore.model.Book;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.example.spring.bookstore.exception.DataProcessingException;
+import org.example.spring.bookstore.model.Book;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
