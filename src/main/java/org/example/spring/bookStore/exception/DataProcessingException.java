@@ -1,7 +1,7 @@
 package org.example.spring.bookStore.exception;
 
-public class DataException extends RuntimeException {
-    public DataException(String message, Throwable cause) {
+public class DataProcessingException extends RuntimeException {
+    public DataProcessingException(String message, Throwable cause) {
         super(message, cause);
     }
 }

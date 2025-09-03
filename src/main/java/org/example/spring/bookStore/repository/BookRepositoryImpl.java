@@ -1,6 +1,6 @@
 package org.example.spring.bookStore.repository;
 
-import org.example.spring.bookStore.exception.DataException;
+import org.example.spring.bookStore.exception.DataProcessingException;
 import org.example.spring.bookStore.model.Book;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -28,7 +28,7 @@ public class BookRepositoryImpl implements BookRepository {
             if (transaction != null) {
                 transaction.rollback();
             }
-            throw new DataException("Can't add book to the DB: " + book, e);
+            throw new DataProcessingException("Can't add book to the DB: " + book, e);
         } finally {
             if (session != null) {
                 session.close();
@@ -41,7 +41,7 @@ public class BookRepositoryImpl implements BookRepository {
         try (Session session = sessionFactory.openSession()) {
             return session.createQuery("SELECT b from Book b", Book.class).getResultList();
         } catch (Exception e) {
-            throw new DataException("Can't find any book in the DB", e);
+            throw new DataProcessingException("Can't find any book in the DB", e);
         }
     }
 }
