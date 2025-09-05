@@ -1,4 +1,4 @@
-package org.example.spring;
+package org.example.spring.bookstore;
 
 import java.math.BigDecimal;
 import org.example.spring.bookstore.model.Book;
@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class BookstoreApplication {
+public class    BookstoreApplication {
     @Autowired
     private BookService bookService;
 

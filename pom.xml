@@ -23,7 +23,6 @@
 		<maven.checkstyle.plugin.configLocation>
 			https://raw.githubusercontent.com/mate-academy/style-guides/master/java/checkstyle.xml
 		</maven.checkstyle.plugin.configLocation>
-		<javac.executable>${env.JAVA_HOME}/bin/javac</javac.executable>
 		<lombok.version>1.18.38</lombok.version>
 	</properties>
 
