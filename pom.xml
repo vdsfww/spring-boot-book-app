@@ -85,7 +85,6 @@
 						<target>${java.version}</target>
 						<encoding>${project.build.sourceEncoding}</encoding>
 						<fork>true</fork>
-						<executable>${javac.executable}</executable>
 						<annotationProcessorPaths>
 							<path>
 								<groupId>org.projectlombok</groupId>
